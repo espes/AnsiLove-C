@@ -316,7 +316,7 @@ void alAnsiLoader(char *input, char output[], char font[], char bits[], char ice
     unsigned char ansi_sequence_character;
     
     // default color values
-    int32_t color_background = 0, color_foreground = 7; 
+    int32_t color_background = 15, color_foreground = 0; 
     
     // text attributes
     bool bold, underline, italics, blink;
@@ -568,8 +568,8 @@ void alAnsiLoader(char *input, char output[], char font[], char bits[], char ice
                             
                             if (seqValue == 0)
                             {
-                                color_background = 0;
-                                color_foreground=7;
+                                color_background = 15;
+                                color_foreground = 0;
                                 bold = false;
                                 underline = false;
                                 italics = false;
@@ -814,7 +814,7 @@ void alAnsiLoader(char *input, char output[], char font[], char bits[], char ice
         
         gdImagePaletteCopy(im_Backgrnd, im_Font);
         
-        background_canvas = gdImageColorAllocate(im_ANSi, 0, 0, 0);
+        background_canvas = gdImageColorAllocate(im_ANSi, 255, 255, 255);
     }
     
     // color array and RGB definitions
