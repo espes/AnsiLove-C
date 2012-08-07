@@ -261,7 +261,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ansilove/ansilove-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "~/Projekte/Programmierung/Frameworks/AnsiLove-C/lib/MacOSX/libgd/include";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/lib/MacOSX/libgd/include\"";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib/MacOSX/libgd\"",
@@ -280,7 +280,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ansilove/ansilove-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "~/Projekte/Programmierung/Frameworks/AnsiLove-C/lib/MacOSX/libgd/include";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/lib/MacOSX/libgd/include\"";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib/MacOSX/libgd\"",
